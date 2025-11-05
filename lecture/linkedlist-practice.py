@@ -1,9 +1,69 @@
-class Node:
+"""ss Node:
        def __init__(self , data):
               self.data = data
               self.next = None
+node1 = Node(3)
+node2 = Node(4)
+node3 = Node(5)
+node4 = Node(10)
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node1
 
-def traversary_of_linked_list(head):
+current = node1
+n = 0
+while current and n<12 :
+        print(current.data, end="->")
+        current = current.next
+        n+=1
+        
+"""
+class Node:
+        def __init__(self,data):
+                self.data = data  # 2
+                self.next = None
+                self.prev= None
+
+
+node1 = Node(2)
+node2 = Node(3)
+node3 = Node(4)
+node4 = Node(6)
+
+
+node1.next = node2
+node2.next = node3
+node2.prev = node1
+node3.next = node4
+node3.prev = node2
+node4.prev = node3
+node4.next = node1
+
+current = node1
+current_ = node4
+ 
+n = 0 
+while current and n < 12 :
+        print(current.data, end="->")
+        current = current.next
+        n+=1
+print()
+n = 0
+while current_  and n<12 :
+        print(current_.data,end="<-")
+        current_ = current_.prev
+        n+=1
+
+
+
+
+
+
+
+
+
+"""def traversary_of_linked_list(head):
         current = head
         while current:
                 print(current.data, end="->")
@@ -23,7 +83,7 @@ def fond_the_lowes_node(head):
 
 
 
-
+=
 node1 = Node(3)
 node2 = Node(4)
 node3 = Node(5)
@@ -61,7 +121,7 @@ insert_node_at_position(node1 , new_node , 2)
 
 traversary_of_linked_list(node1)
 
-
+"""
 
 """def delet_node(head, delete_node):
         if head == delet_node:
