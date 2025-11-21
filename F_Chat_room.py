@@ -13,4 +13,3 @@ if hello_index == len(hello):
 else:
         print("NO")
         
-
